@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  producer:
+    build:
+      context: ./producer
+    ports:
+      - "8080:8080"
+    networks:
+      - mynetwork
+
+  fake-api-client:
+    build:
+      context: ./fake-api-client
+    depends_on:
+      - producer
+    networks:
+      - mynetwork
+
+  consumer-bq:
+    build:
+      context: ./consumer-bq
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
