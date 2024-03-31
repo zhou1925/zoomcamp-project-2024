@@ -3,8 +3,9 @@ The goal of this project is create a streaming pipeline using Kafka, use a produ
 
 you can check the final dashboard in the following link below:
 
-- [dashboard](https://lookerstudio.google.com/reporting/e69fe650-6271-4d66-a49f-b3fa27d35f0b)
+- [dashboard link](https://lookerstudio.google.com/reporting/e69fe650-6271-4d66-a49f-b3fa27d35f0b)
 
+![Dashboard](docs/imgs/dashboard.JPG)
 
 At the beginning I was using `https://www.kaggle.com/datasets/arshkon/linkedin-job-postings` this dataset for my project but after realizing that it was not aligned with my project I decided to changed for a fake-api-client(I explain all this in my video, if you have time to watch it would be better)
 
@@ -107,7 +108,7 @@ You need a confluent account to create a kafka cluster.
 
 - you need to setup client.properties file inside the producer and consumer-bq folder
 - you need to go to the [this link](https://confluent.cloud/environments/env-mkj6r1/clusters/lkc-8yv5d5/clients/new) and choose Golang and follow the steps provided by confluent:
-![diagram](docs/imgs/confluent.jpg)
+![confluent client](docs/imgs/confluent.JPG)
 
 ## after get all auth credentials from confluent and Bigquery
 
